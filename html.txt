@@ -1,0 +1,80 @@
+h1 : 32px
+h2 : 24px
+h3 : 19px
+h4 : 16px
+h5 : 12px
+h6 : 10px
+
+<p></p> : 사이에 텍스트를 입력하면 입력한 내용 앞뒤로 빈줄이 생기면서 텍스트 단락이 만들어짐.
+<br> : 줄바꿈이 되고 닫는태그 없음.
+<pre></pre> : 엔터, 탭, 스페이스 표현 가능(입력하는 내용 그대로 표현 됨)
+<hr> 선 그어짐
+
+<p>hello good morning</p>
+    <p><b> - Bold text</b></p>
+    <p><strong style="color: yellowgreen"> - Important text</strong></p> //얅간 굵은 글씨에 색 넣어줌
+    <p><i> - Italic text 기움</i></p>
+    <p><em> - Emphasized text 기움</em></p>
+    <p><mark> - Marked text 형광펜</mark></p>
+    <p><small> - Smaller text</small></p>
+    <p><del> - Deleted text 중간줄</del></p>
+    <p><ins> - Inserted text 밑줄</ins></p>
+    <p><sub> - Subscript text</sub></p>
+    <p><sup> - Superscript text</sup></p>
+
+id : 고유식별자, 동일한 id 할 수 없음. <style>#one</style>
+class : 그룹으로 묶어서 스타일 지정
+-------------------------------
+변수 선언기능
+var, let, const 키워드를 이용해 변수를 만들겠다고 선언하는 것.
+
+   
+var 재선언, 재할당 가능
+let 재선언 불가, 재할당 가능(실수로 중복해서 만드는 실수를 방지가능)
+const 재선언, 재할당 불가(실수로 중복해서 만드는 실수를 방지가능)
+https://velog.io/@bathingape/JavaScript-var-let-const-%EC%B0%A8%EC%9D%B4%EC%A0%90
+
+변수 선언에선 기본적으로 const 사용하고 재할당이 필요한 경우에 한정해서 let 사용하는게 좋음
+객체를 재할당 하는 경우가 생각보다 흔치 않고 const를 사용하면 의도치 않은 재할당을 방지해주기 때문.
+
+
+(X)
+let : name
+let : name
+
+(O)
+var : name
+var : name
+
+
+var 이름; <선언
+이름 = 'kim'; <할당
+
+var 이름 = 'kim'; 선언, 할당 동시에 하는 것과
+
+var, let 으로 만들면 재할당이 가능한데 const로 만들면 값 재할당이 불가능.
+ex)
+let 이름 = 'kim';
+이름 = 'park'; //가능
+
+const 나이 = 30;
+나이 = 40; //에러
+
+
+   -------------------------------------------------------------------------
+   == Equal Operator(비교연산자)
+   === Strict Equal Operator(엄격 비교 연산자)
+
+   a==b a와 b의 값이 같은지를 비교해서 같으면 true, 다르면 false
+   ===는 엄격하게 하는 것
+
+   ex) 100=='100' //true
+   100==true //ture
+   null==undefined //true
+   두 피연산자의 값이 서로 타입이 같으면 true, 다르면 flase
+   100==='100'//false
+   1===ture//false
+   NaN===NaN //false
+   NaN 값은 자기 자신을 포함하여 어떠한 값과도 일치하지 않아서 false
+
+   
